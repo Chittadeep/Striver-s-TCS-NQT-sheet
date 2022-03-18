@@ -8,9 +8,12 @@ class Problem7{
         System.out.println("Enter a string: ");
         String string = sc.nextLine();
 
-        for(int i = 0; i<=string.length()/2; i++)
+        String revString ="";
+        for(int i = string.length()-1; i>=0; i--)
         {
-            string.setChar
+            revString = revString+string.charAt(i);
         }
+
+        System.out.println(revString);
     }
 }
